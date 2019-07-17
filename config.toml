@@ -1,7 +1,8 @@
-baseURL = "https://uxd-lcc.org/"
+baseURL = "https://uxd-lcc.github.io/uxd-lcc.org/"
 footnoteReturnLinkContents = "↩"
 title = "BA (Hons) UXD at LCC, UAL"
 theme = "uxdlcc"
+publishDir = "docs"
 
 [params]
   AuthorName = "Jon Doe"
