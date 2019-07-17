@@ -1,4 +1,4 @@
-baseURL = "https://uxd-lcc.github.io/uxd-lcc.org/"
+baseURL = "http://uxd-lcc.org/"
 footnoteReturnLinkContents = "↩"
 title = "BA (Hons) UXD at LCC, UAL"
 theme = "uxdlcc"
