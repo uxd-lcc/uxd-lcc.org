@@ -7,7 +7,7 @@ publishDir = "docs"
 [params]
   AuthorName = "UXD"
   GitHubUser = "http://github.com/uxd-lcc"
-  thumbnail = "img/UXD_logo.png"
+  thumbnail = "img/uxd_logo.png"
 
 [permalinks]
   posts = "/:section/:title/"
