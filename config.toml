@@ -1,0 +1,14 @@
+baseURL = "https://uxd-lcc.org/"
+footnoteReturnLinkContents = "↩"
+title = "BA (Hons) UXD at LCC, UAL"
+theme = "uxdlcc"
+
+[params]
+  AuthorName = "Jon Doe"
+  GitHubUser = "spf13"
+  ListOfFoo = ["foo1", "foo2"]
+  SidebarRecentLimit = 5
+  Subtitle = "Hugo is Absurdly Fast!"
+
+[permalinks]
+  posts = "/:section/:title/"
