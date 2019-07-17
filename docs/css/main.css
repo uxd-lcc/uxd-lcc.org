@@ -10,7 +10,7 @@ h1 {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 2.25rem;
+    margin: 2rem 0 0.75rem;
 }
 
 p {
@@ -18,9 +18,9 @@ p {
     margin: 1rem 0;
 }
 
-#nav {
-   /* padding: 2rem 0;  */
-}
+/* #nav {
+   padding: 2rem 0; 
+} */
 
 .nav {
     align-content: center;
@@ -84,9 +84,9 @@ hr {
     margin-bottom: 1rem;
 }
 
-#main header h1 {
+/* #main header h1 {
     
-}
+} */
 
 #main {
     max-width: 40rem;
@@ -128,6 +128,7 @@ hr {
 }
 
 #main a:hover {
-    color: #3273dc;
-    background-image: linear-gradient(to right, #3273dc 100%, #3273dc);
+    color: #4a4a4a; 
+    background-image: linear-gradient(to right, #FCDD00 100%, #FCDD00);
 }
+

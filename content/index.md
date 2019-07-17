@@ -4,11 +4,9 @@ date: 2018-11-14T19:02:50-07:00
 title: "BA:UXD is hiring associate lecturers"
 ---
 
-We are hiring! 
-
 > [BA (Hons) User Experience Design](https://www.arts.ac.uk/subjects/animation-interactive-film-and-sound/undergraduate/ba-hons-user-experience-design-lcc) at London College of Communication was one of the first UX courses at undergraduate level to be created 4 years ago. 
 
-> During the 3 year undergraduate at UAL we offer a holistic art and design education that encourages independent, creative and critically minded students to develop as capable and responsible practitioners. The course specialism is the exploration, interrogation and creation of digital platforms, media and emergent technologies. Students are encouraged to think about user experience through the lens of the social, ecological and system based nature of contemporary technologies using design as a tool to identify problems, create solutions and incite discussion.   
+> During the 3 year undergraduate at UAL we offer a holistic art and design education that encourages independent, creative and critically minded students to develop as capable and responsible practitioners. The course specialism is the creation and interrogation of digital platforms, media and emergent technologies. Students are encouraged to think about user experience through the lens of the social, ecological and system based nature of contemporary technologies using design as a tool to identify problems, create solutions and incite discussion.   
 
 > We are looking for people with professional experience designing for digital applications in a creative industries role or as part of multi-disciplinary collaborative groups. We are a small teaching team and are looking for people with a broad spectrum of skills and interests to teach at all levels of the course. This could include delivery of  practical methods in information/UI design or basic coding to year 1, user research and analysis to year 2 or supporting self-directed projects in year 3. There is scope to help with developing project briefs and ideally bringing your own practice or interests into the studio/classroom.
 
