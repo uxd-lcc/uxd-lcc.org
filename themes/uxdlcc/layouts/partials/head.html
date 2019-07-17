@@ -10,3 +10,23 @@
 
 <!-- https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css.map
 https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css -->
+
+
+ <!-- Start of Open Graph -->
+ <meta property="og:title" content="{{ .Title }}">
+ <meta property="og:type" content="article">
+ <meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}">
+
+ <meta property="og:description" content="{{ .Description }}">
+ <meta property="og:url" content="{{ .Site.BaseURL }}">
+ <meta property="og:site_name" content="{{ .Site.Title }}">
+ <meta property="og:image" content="{{ .Site.BaseURL }}img/UXD_logo.png">
+
+ <!-- End of Open Graph -->
+ <!-- Start of Twitter -->
+ <meta property="twitter:description" content="{{ .Description }}">
+ <meta property="twitter:title" content="{{ .Title }}">
+ {{ if .Params.thumbnail }}
+ <meta property="twitter:image" content="{{ .Site.BaseURL }}img/UXD_logo.png">
+ {{ end }}
+<!-- End of Twitter -->

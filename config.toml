@@ -5,11 +5,9 @@ theme = "uxdlcc"
 publishDir = "docs"
 
 [params]
-  AuthorName = "Jon Doe"
-  GitHubUser = "spf13"
-  ListOfFoo = ["foo1", "foo2"]
-  SidebarRecentLimit = 5
-  Subtitle = "Hugo is Absurdly Fast!"
+  AuthorName = "UXD"
+  GitHubUser = "http://github.com/uxd-lcc"
+  thumbnail = "img/UXD_logo.png"
 
 [permalinks]
   posts = "/:section/:title/"

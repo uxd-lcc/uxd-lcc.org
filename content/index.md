@@ -1,7 +1,8 @@
 ---
 author: "Gareth Foote"
-date: 2018-11-14T19:02:50-07:00
+date: 2019-07-16T19:02:50-07:00
 title: "BA:UXD is hiring associate lecturers"
+description: "BA (Hons) User Experience Design at London College of Communication are looking for people with professional experience designing for digital applications in a creative industries role or as part of multi-disciplinary collaborative groups."
 ---
 
 > [BA (Hons) User Experience Design](https://www.arts.ac.uk/subjects/animation-interactive-film-and-sound/undergraduate/ba-hons-user-experience-design-lcc) at London College of Communication was one of the first UX courses at undergraduate level to be created 4 years ago. 
