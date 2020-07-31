@@ -57,13 +57,58 @@
         transform: translateX(-22%) translateY(-30%);
       }
 
-    .events h1{
+
+    .students {
+      margin-top: 50px;
+    }
+    
+    .students p {
+      font-size: 20px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: normal;
+    } 
+
+    .students a {
+      font-size: 16px;
+    }
+
+    .students a {
+      display: block;
+      position: relative;
+      padding-left: 25px; 
+    }
+    .students a:hover::after {
+      background-image: url('../svg/arrow-02.svg');
+      background-color: black;
+    }
+
+    .students a::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 0.75em;
+      width: 0.75em;
+      border: .15em solid #000;
+      font-weight: bold;
+      background-image: url('../svg/arrow-01.svg');
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 0.1em;
+      left: 0;
+    }
+
+    h1{
       line-height: 0.8;
       font-size: 2rem;
       text-transform: uppercase;
       margin-top: 2rem;
       margin-bottom: 2rem;
       letter-spacing: -0.03em;
+    }
+
+    .students h1 {
+      margin-bottom: 0.5rem;
     }
 
     .event{
@@ -91,7 +136,7 @@
       }
       .event::after{
         font-weight: bold;
-        background-image: url('../svg/arrow-01.svg');
+        background-image: url('arrow-01.svg');
         background-size: 70%;
         background-position: center;
         background-repeat: no-repeat;
@@ -126,7 +171,11 @@
         color: #fdff55;        
       } 
 
-      .events a:first-of-type .event{
+      .events a:nth-of-type(1) .event{
+        opacity: 0.25;
+      }
+
+      .events a:nth-of-type(2) .event{
         background: #000;          
         color: #fdff55;
       }
@@ -153,6 +202,30 @@
           right: 2rem;
           top: 1rem;
         }
+
+        .students {
+          float: right;
+          text-align: right;
+          width: 39vw;
+          margin-top: 100px;
+        }
+
+        .students .links {
+          white-space: nowrap;
+          display: table;
+          float: right;
+        }
+
+        .students a {
+          padding-right: 25px;
+          padding-left: 0;
+        }
+
+        .students a::after {
+          left: auto;
+          right: 0; 
+        }
+
       }
 
   </style>
@@ -161,6 +234,31 @@
   <a class="to-showcase" href="https://graduateshowcase.arts.ac.uk/c/london-college-of-communication-ba-hons-information-and-interface-design">
     IID SHOWCASE 2020
   </a>
+  <section class="students">
+    
+    <p>The Behind the Interface talks will be followed by an opportuntity to meet the students. They will be available in the following breakout rooms to discuss their presentations.</p>
+    <a target="_blank" href="https://eu.bbcollab.com/guest/3c8457741bbf410bae030fc41db4609a"><h1>Breakout Room 1</h1>
+    Kristina Iankova, Mai Elamin, David Valente</a>
+
+    <a target="_blank" href="https://eu.bbcollab.com/guest/8fde899d27c647cabac18ee22f91484b"><h1>Breakout Room 2</h1>
+    Tammy Chiu, Will Cottrell, Fisnik Islami</a>
+
+    <h1>Student Portfolios</h1>
+    <div class="links">
+    <a href="https://graduateshowcase.arts.ac.uk/projects/3598/cover">Vishal Mayo</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/4841/cover">Ying Ting Chiu</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/4415/cover">David Valente</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/4463/cover">Luke Whetton</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/2506/cover">Kristina Iankova</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/2646/cover">Mateusz Gryta</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/5423/cover">Inês Araújo</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/1171/cover">Mai Elamin</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/3084/cover">Fisnik Islami</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/5500/cover">Winona Sarah Er</a>
+    <a href="https://graduateshowcase.arts.ac.uk/projects/3813/cover">Tyron K</a>
+    </div>
+
+  </section>
   <section class="events">
     <h1>Events</h1>
     <a href="https://www.eventbrite.co.uk/e/tipitap-can-you-beat-the-game-of-manipulation-tickets-113494085866"> 
