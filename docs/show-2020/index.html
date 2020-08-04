@@ -169,15 +169,16 @@
         color: #fdff55;        
       } 
 
-      .events a:nth-of-type(1) .event{
+      .events .event.in-past {
         opacity: 0.25;
+        pointer-events: none;
       }
 
-      .events a:nth-of-type(2) .event{
+      .events .event.is-next{
         background: #000;          
         color: #fdff55;
       }
-      .events a:nth-of-type(2) .event:hover{
+      .events .event.is-next:hover{
         background: #fdff55;
         color: #000;
       }
@@ -234,10 +235,10 @@
   </a>
   <section class="students">
     
-    <!-- <p>The Behind the Interface talks will be followed by an opportuntity to meet the students and talk to them about their talks or work.</p> -->
+    <!-- <p>The Behind the Interface talks will be followed by an opportuntity to meet the students and talk to them about their talks or work.</p> 
     <a target="_blank" href="https://eu.bbcollab.com/guest/3c8457741bbf410bae030fc41db4609a"><h1>Behind the Interface Breakout Rooms</h1>
     Meet the students who presented during Behind the Interface talks</a>
-    </a>
+    </a>-->
   
     <h1>Student Portfolios</h1>
     <div class="links">
@@ -286,5 +287,15 @@
       </article>
     </a>
   </section>
+  <script>
+    const articles = document.querySelectorAll('.event')
+    articles.forEach((el)=> {
+      const time = new Date(el.getElementsByTagName("time")[0].dateTime)
+      const timePlus = new Date(time.getTime()+60*60*1000)
+      if(timePlus < Date.now()){
+        el.classList.add("in-past")
+      }
+    })
+  </script>
 </body>
 </html>
