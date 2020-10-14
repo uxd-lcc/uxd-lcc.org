@@ -198,8 +198,7 @@ table{
 .ug-timetable{
 
 }
-.ug-timetable th:nth-child(1),
-.ug-timetable td:nth-child(1){
+.ug-timetable th:nth-child(1){
   width: 15%
 }
   .ug-timetable th:nth-child(2),
@@ -208,7 +207,8 @@ table{
   .ug-timetable td:nth-child(3),
   .ug-timetable th:nth-child(4),
   .ug-timetable td:nth-child(4){
-    width: 0;
+    width: 0.1%;
+    padding-right: var( --ug-line-height-rem );
   }
 
 @media (min-width: 900px){  
