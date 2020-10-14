@@ -1,0 +1,316 @@
+:root {
+  --ug-spacing: 1.2rem;
+  --ug-spacing-neg: -1.2rem;
+  --ug-line-height: 1.4;
+  --ug-line-height-rem: 1.4rem;
+}
+@media (min-width: 900px){
+  :root {
+    --ug-spacing: 2.4rem;
+    --ug-spacing-neg: -2.4rem;
+  }
+}
+
+html{
+  font-family: 'Roboto', sans-serif;  
+  line-height: var( --ug-line-height );
+
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6,
+p, 
+ul, ol, dl{
+  margin-top: 0;
+  margin-bottom: var( --ug-line-height-rem );
+}
+
+dt{
+  font-weight: bold;
+}
+
+dd{
+  margin-left: 0;
+}
+
+ul, ol{
+  padding-left: 0;  
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 0.98;
+}
+
+.accessiblyhidden{
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0 0 99.9% 99.9%);
+  clip-path: inset(0 0 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
+
+.container{
+  padding: var( --ug-spacing );
+  padding-top: 0;  
+}
+  .container > header,
+  .container > article,
+  .container > nav{
+    padding-top: var( --ug-spacing );
+    margin-bottom: 30vh;
+    clear: both;
+  }
+
+.ug-image-leader{
+  display: block;
+  margin: 0;
+  padding: 0;   
+}
+  .ug-image-leader img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+  .ug-image-leader figcaption{
+    text-align: right;
+    padding: 0  var( --ug-spacing );
+    font-size: 0.8rem;
+  }
+
+.ug-header hgroup h1{
+  margin-bottom: 0.45rem;
+}
+  .ug-header hgroup h2{
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  .ug-header--briefs h2{
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .ug-header--briefs ul{
+    margin-top: 0;
+  }
+
+.ug-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  left: 0;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding: 0.3rem var( --ug-spacing );;
+  font-size: 0.8rem; 
+}
+
+table,
+img{
+  width: calc( 100vw - var( --ug-spacing ) - var( --ug-spacing ) );
+}
+
+table{
+  border-collapse: collapse;
+  max-width: 64rem;
+}
+  table th{
+    text-align: left;   
+    border: 1px solid black;    
+    width: 50%;    
+    background-color: #EEEEEE;    
+  }    
+    table thead th{
+      border-bottom: none;
+      line-height: 1;
+    }
+  table td{
+    border: 1px solid black;
+  }
+
+  table td,
+  table th{
+    padding: 0.4rem;
+    vertical-align: top;
+  }
+  table td+td,
+  table th+th{
+    
+  }
+
+.ug-key-information{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-left: var( --ug-spacing-neg );
+}
+.ug-key-information > div{
+  width: 50%;
+  padding: var( --ug-line-height-rem );
+  box-sizing: border-box;
+}
+
+.ug-txt{
+  max-width: 32rem;
+}
+  .ug-txt h3,
+  .ug-txt h4,
+  .ug-txt h5,
+  .ug-txt h6{
+    margin-top: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .ug-txt h3+h4,
+  .ug-txt h4+h5,
+  .ug-txt h5+h6,
+  .ug-txt h6+h6,
+  .ug-txt h3+dl,
+  .ug-txt h4+dl,
+  .ug-txt h5+dl,
+  .ug-txt h6+dl{
+    margin-top: -0.2rem;
+  }
+  .ug-txt dl dt{
+    font-weight: normal;
+    font-style: italic;
+    margin-top: var( --ug-line-height-rem );
+  }
+  .ug-txt dl dd p:last-child{
+    margin-bottom: 0;
+  }
+
+.ug-ref{
+
+}
+  .ug-ref li{
+    margin-bottom: 1.2rem;
+  }
+
+.ug-timetable{
+
+}
+.ug-timetable th:nth-child(1),
+.ug-timetable td:nth-child(1){
+  width: 15%
+}
+  .ug-timetable th:nth-child(2),
+  .ug-timetable td:nth-child(2),
+  .ug-timetable th:nth-child(3),
+  .ug-timetable td:nth-child(3),
+  .ug-timetable th:nth-child(4),
+  .ug-timetable td:nth-child(4){
+    width: 0;
+  }
+
+@media (min-width: 900px){  
+  html{
+    font-size: 1.2em;
+  }  
+  .ug-image-leader{
+    width: 100%;    
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
+    .ug-image-leader img{
+      min-height: 75vh;
+    }
+    .ug-image-leader figcaption{
+      width: 100%;
+      position: absolute;
+      top:  var( --ug-line-height-rem );
+      left: 0;
+      box-sizing: border-box;
+    }
+  .ug-footer{
+    background: transparent;
+    position: fixed;
+    bottom: var( --ug-spacing );
+    right: var( --ug-spacing );
+    font-size: 1rem;
+    left: auto;
+    width: auto;
+    padding: 0;
+  }
+  .ug-image-leader+.container{    
+    margin-top: 75vh;
+    background: #FFFFFF;
+  }  
+  table,
+  img{
+    width: calc( 100vw - var( --ug-spacing ) - var( --ug-spacing ) );  
+  }
+  table td,
+  table th{
+    padding: 0.6rem;
+  }
+  .ug-key-information > div{
+    width: 33%;
+    padding: calc( var( --ug-spacing ) / 4 ) var( --ug-spacing );
+  }
+  .ug-ref{
+    width: 50%;    
+    float: left;
+    box-sizing: border-box;            
+  }
+    .ug-ref:nth-child(n){
+      padding-right: var( --ug-spacing );
+    }
+    .ug-ref:nth-child(2n){
+      padding-left: var( --ug-spacing );
+    }
+}
+
+
+/* COURSE DIAGRAM */
+
+/* the wrapper svg element */
+.ug-course-diagram--svg{ 
+  font-family:'Roboto', sans-serif;
+  font-size: 1.4rem;
+}
+/* the background layer */
+.ug-course-diagram--bg text{
+  font-weight: bold;
+}	
+.ug-course-diagram--bg line{
+  fill:none;stroke:#969696;stroke-width:2;
+}
+/* the units */
+.ug-course-diagram--unit rect{
+  fill: #000000;
+}
+.ug-course-diagram--unit text{
+  fill: #FFFFFF;
+}
+
+/* 
+  hide the units, there's a style block in the index.html <head>
+  that should be used to show the correct year.
+  e.g:
+
+  .ug-course-diagram--Y2{
+    display: block;
+  }
+
+*/
+.ug-course-diagram--Y1,
+.ug-course-diagram--Y2,
+.ug-course-diagram--Y3{
+  display: none;
+}
+
+@media (min-width: 900px){  
+  .ug-course-diagram--svg{ 
+    font-size: 1rem;
+  }
+}
