@@ -231,6 +231,9 @@ table{
       left: 0;
       box-sizing: border-box;
     }
+      .ug-image-leader.ug-image-leader__light-image figcaption{
+        color: #000000;
+      }
   .ug-footer{
     background: transparent;
     position: fixed;
