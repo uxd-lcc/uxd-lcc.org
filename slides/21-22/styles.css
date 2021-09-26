@@ -210,3 +210,8 @@ blockquote p {
 .remark-notes li {
   font-size: 18px;
 }
+
+.remark-code,
+.remark-inline-code {
+  font-weight: normal;
+}
