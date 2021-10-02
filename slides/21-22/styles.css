@@ -215,3 +215,7 @@ blockquote p {
 .remark-inline-code {
   font-weight: normal;
 }
+
+.remark-slide-content {
+  background-size: contain;
+}
