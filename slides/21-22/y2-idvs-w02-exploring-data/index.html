@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Year 2 | IDVS | Project Briefing</title>
+    <title>Year 2 | IDVS | Week 2 | Exploring datasets</title>
     <link href="favicon.png" rel="icon" type="image/png" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,17 +52,22 @@ class: middle
 ???
 Visually highlighting: drawing out stories
 
+---
+
+class: middle
+background-image: url(./img/set-reset-species.png)
 
 ---
-class: middle, todo
 
-# Examples
+class: middle
+background-image: url(./img/set-reset-species-annotated.png)
 
 ---
 class: middle
-background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a9f94597372029.5ec3b411c740b.png)
-background-size: contain; 
 
+# More Examples
+
+https://www.are.na/gareth-foote/uxd-interactive-data-visualisation-studio
 
 ---
 class: middle
@@ -71,7 +76,12 @@ class: middle
 # Exploring Data
 
 ---
-name: data-where
+name: finding-data
+class: middle
+
+## Finding Data
+
+---
 class: top
 
 ### Where can we find data?
@@ -161,7 +171,12 @@ It doesn't mean there isn't inaccuracy or bias.
 ---
 class: middle
 
-#### In general you can look widely online for datasets but always check the organisation, their goals, methods and the condition of the data.
+In general you can **look widely online for datasets** but always check the organisation, their goals, methods and the condition of the data.
+
+---
+class: middle
+
+## Accessing Datasets
 
 ---
 class: top
@@ -170,8 +185,15 @@ class: top
 
 Often data is publicly available online and not under copyright but is not in a useable format. 
 
-- Sometimes it comes in a spreadsheet (.csv, .xls) 🙌🏻
+Sometimes data comes in a **spreadsheet (.csv, .xlsx)**, ready to use!! 
+--
+## 🙌🏻 
 
+--
+But often we need a workaround to convert it to a usable format.
+
+???
+.csv is best. Most transferrable to other software. 
 
 ---
 class: top
@@ -180,7 +202,15 @@ class: top
 
 Often data is publicly available online and not under copyright but is not in a useable format. 
 
-- 📄 Sometimes it will be a PDF <br> https://pdf2xl.com/
+**Problem** → Sometimes it can be embedded in a PDF document 📄
+
+--
+
+**Workaround** → Online tools exist for automatically converting PDF tables into spreadsheets. For example, https://pdf2xl.com/
+
+
+???
+They aren't perfect
 
 ---
 background-image: url(./img/pwc-top-100.gif) 
@@ -192,7 +222,11 @@ class: top
 
 Often data is publicly available online and not under copyright but is not in a useable format. 
 
-- 🌐 Sometimes it might be hidden in a HTML `<table>` element. https://www.convertcsv.com/html-table-to-csv.htm
+**Problem** → Sometimes might be in a HTML `<table>` element on a website 🌐  
+  
+--
+
+**Workaround:** → Using the browser developer tools we can copy HTML `<table>`s and use an online converter: https://www.convertcsv.com/html-table-to-csv.htm
 
 ---
 background-image: url(./img/honepot.gif) 
@@ -204,7 +238,12 @@ class: top
 
 Often data is publicly available online and not under copyright but is not in a useable format. 
 
-- 🌐 Sometimes it might be embedded in a HTML and need _scraping_ <br>https://dataminer.io/
+**Problem** → Sometimes it might be embedded in a HTML (not a neat `<table>` element) and needs _scraping_ ⛏
+
+--
+
+**Workaround:** → Many tools exist to scrape data from websites. Data Miner is an easy to use browser extension for Chrome: https://dataminer.io/
+
 
 ---
 class: top
@@ -217,11 +256,16 @@ class: top
 - [Data Scraper](https://dataminer.io/) (browser extension for Chrome)
 
 ---
+class: middle
+
+## Exploring Datasets
+
+---
 class: top
 
 ### Understanding the data
 
-What are you expectations?<br>
+What are your expectations?<br>
 What do you know already?
 
 ---
@@ -282,14 +326,16 @@ What can you understand about the data scanning it?
 - What other limitations can you observe?  
 
 ???
-- Data that represents human behaviour in particular always represents a certain confidence based on the numbers. 
-- Not complete certainty. 
+There are always limitations - when looking at data about human behaviour (in science or any field) nothing is true or false.
+- It represents a level of certainty based on the numbers.
+- A limitation might be that the sample size is small and possibly not representative enough to make an assertion. 
 - So we must always make that clear.
+- Christine will do more on visualising uncertainty.
 
 ---
 class: top
 
-### Tools for Manipulating
+### Tools for Examining & Manipulating
 
 - Google Sheets or Ethercalc (limited)
 - Excel & OpenOffice (desktop, more poweful)
@@ -298,7 +344,7 @@ class: top
 ---
 class: top
 
-### Tools for Manipulating
+### Tools for Examining & Manipulating
 
 Excel: The unfortunate standard
 
@@ -319,11 +365,7 @@ class: middle
 [Brief](https://gfte.notion.site/Exploring-Datasets-123cc36dcb894096b15220fc0bb6c424)
 
 
-<!-- Set Reset: Species under threat
-![](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a9f94597372029.5ec3b411c740b.png)
 
-SetReset: Running the Numbers
-![](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/ecb29297313791.5ec280b685c3d.png) -->
 
     </textarea>
     <script type="text/javascript">
