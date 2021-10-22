@@ -72,6 +72,24 @@ h5 {
   text-transform: uppercase;
 }
 
+/* Annotation/caption*/
+h6 {
+  margin: 0em 0 0.4em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 78% */
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.unbold h2,
+.unbold h3,
+.unbold h4 {
+  font-weight: normal;
+}
+
 .remark-slide-content {
   background-color: var(--main-bg-colour);
   padding: 3em 3em 2em 3em;
