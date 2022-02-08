@@ -40,7 +40,8 @@ p {
 p {
   margin: 0 0 0.5em;
 }
-h1 {
+
+.remark-slide-content h1 {
   margin: 0 0 28px;
   font-size: 92px;
   line-height: 1;
@@ -48,23 +49,26 @@ h1 {
   text-transform: uppercase;
   margin-top: 60px;
 }
-h2 {
+
+.remark-slide-content h2 {
   margin: 0 0 28px;
   font-size: 92px;
   line-height: 100%;
 }
-h3 {
+
+.remark-slide-content h3 {
   margin: 0 0 28px;
   font-size: 67px;
   line-height: 130%;
 }
-h4 {
+
+.remark-slide-content h4 {
   margin: 0 0 28px;
   font-size: 50px;
   line-height: 130%;
 }
 
-h5 {
+.remark-slide-content h5 {
   margin: 1em 0 28px;
   font-size: 37px;
   line-height: 130%;
@@ -78,7 +82,7 @@ h5 {
 }
 
 
-h6 {
+.remark-slide-content h6 {
   font-size: 24px;
   line-height: 130%;
   text-transform: uppercase;
@@ -102,6 +106,7 @@ code, .remark-code,
   font-family: 'IBM Plex Mono', monospace;
   font-weight: normal;
   text-transform: none !important;
+  font-size: 30px;
 }
 
 /* top & bottom row */
@@ -347,7 +352,6 @@ blockquote p {
   font-size: 18px;
 }
 
-
 .remark-slide-content {
   background-size: contain;
 }
@@ -357,7 +361,6 @@ blockquote p {
   font-weight: bold;
   font-style: italic;
 }
-
 
 .bespoke-code-01 h5:first-of-type,
 .bespoke-code-01 h5 {
@@ -369,9 +372,40 @@ blockquote p {
   padding-left: 40px;
 }
 
+.bespoke-code-small .remark-code {
+  font-size: 21px;
+  letter-spacing: -0.5px;
+}
+
 .middle h2:only-of-type,
 .middle h3:only-of-type,
 .middle h4:only-of-type,
 .middle h5:only-of-type {
   margin: 0;
 } 
+
+.hljs-tag {
+  color: var(--clr-blue) !important;
+}
+
+.hljs-default .hljs {
+  background: none;
+}
+
+.remark-code-line-highlighted {
+  /* background-color: rgba(0, 243, 255, 0.34); */
+  background-color: transparent;
+}
+
+.remark-code-line-highlighted .hljs-attr,
+.remark-code-line-highlighted .hljs-string {
+  background-color: rgba(0, 243, 255, 0.34);
+}
+
+h6 code, h6 .remark-code { 
+  font-size: 24px !important;
+}
+
+p code, p .remark-code { 
+  font-size: 28px !important;
+}
