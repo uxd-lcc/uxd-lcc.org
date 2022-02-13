@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;700&display=swap');
 
 :root {
-  --clr-yellow-em: #FFDC00;
-  --clr-yellow: #FFDC00;
+  --clr-green-luminous: #2bff91;
+  --clr-grey-light: #e2e2e2;
+  --clr-yellow: #fbf45d;
   --clr-blue: #0074D9;
-  --clr-black: #111111;
+  --clr-black: #03030c;
+  --clr-text: var(--clr-green-luminous);
+  --clr-background: var(--clr-grey-light);
 }
 
 .remark-slide-content {
@@ -59,27 +62,40 @@ p {
 .remark-slide-content h3 {
   margin: 0 0 28px;
   font-size: 67px;
-  line-height: 130%;
+  line-height: 110%;
 }
 
 .remark-slide-content h4 {
-  margin: 0 0 28px;
+  margin: 1em 0 28px;
   font-size: 50px;
-  line-height: 130%;
+  line-height: 120%;
 }
 
 .remark-slide-content h5 {
   margin: 1em 0 28px;
   font-size: 37px;
-  line-height: 130%;
+  line-height: 120%;
   font-weight: 500;
 }
 
-.remark-slide-content > p:first-of-type, 
-.remark-slide-content > h4:first-of-type, 
-.remark-slide-content > h5:first-of-type {
-  margin-top: 1.5em;
+/* 
+  Anything following a h6 makes h6 into an eyebrow
+*/
+.remark-slide-content h6 + h4,
+.remark-slide-content h6 + h5 {
+  margin-top: 0;
 }
+
+/* 
+  When these are first they are not 
+  title so give them title space  
+*/
+.remark-slide-content p:first-of-type, 
+.remark-slide-content h4:first-of-type, 
+.remark-slide-content h5:first-of-type {
+  /* margin-top: 1.5em; */
+}
+
 
 
 .remark-slide-content h6 {
@@ -87,6 +103,7 @@ p {
   line-height: 130%;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -117,6 +134,8 @@ code, .remark-code,
   position: absolute;
   height: calc(50%);
   top: 50%;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .br .br-child {
@@ -187,10 +206,6 @@ code, .remark-code,
   clear: both;
 }
 
-.rc > p > img:only-child {
-  margin-top: 40px;
-}
-
 /* Column pressed to right */
 .rc-press {
   position:absolute;
@@ -205,6 +220,10 @@ code, .remark-code,
   width: 25%;
 }
 
+.rc-press p {
+  height: 100%;
+}
+
 .rc-press img {
   object-fit: contain;
   height: 100%;
@@ -213,10 +232,15 @@ code, .remark-code,
 
 .rc-press.cover img {
   object-fit: cover;
+  margin-top: 0;
 }
 .rc-press.cover-left img {
   object-fit: cover;
   object-position: left center;
+}
+
+.rc.no-top-border > *:first-child {
+  margin-top: 0;
 }
 
 .full-bleed {
@@ -340,9 +364,8 @@ blockquote {
   padding-left: 20px;
 }
 blockquote p {
-  /* font-style: italic; */
-  /* font-family: "IBM Plex Serif", serif; */
-  font-size: 24px;
+  font-size: 26px;
+  line-height: 160%;
 }
 
 .remark-notes-preview p,
@@ -360,12 +383,6 @@ blockquote p {
   text-decoration-line: underline;
   font-weight: bold;
   font-style: italic;
-}
-
-.bespoke-code-01 h5:first-of-type,
-.bespoke-code-01 h5 {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .bespoke-code-01 #-h1-shaping-things-excerpt-h1-, .bespoke-code-01 #by-em-bruce-sterling-em-, .bespoke-code-01 #-p-p- {
@@ -408,4 +425,24 @@ h6 code, h6 .remark-code {
 
 p code, p .remark-code { 
   font-size: 28px !important;
+}
+
+.remark-slide-content li h5 {
+  margin: 0 0 20px;
+}
+
+.grid  {
+  overflow: hidden;
+}
+
+.grid p {
+  display: grid;
+  grid-gap: 10px;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(min-content, max-content);
+}
+
+.grid img {
+  width: 100%;
 }
