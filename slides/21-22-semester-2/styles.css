@@ -429,6 +429,7 @@ blockquote p {
 .remark-code-line-highlighted .hljs-attr,
 .remark-code-line-highlighted .hljs-string {
   background-color: rgba(0, 243, 255, 0.34);
+  border-radius: 6px;
 }
 
 h6 code, h6 .remark-code { 

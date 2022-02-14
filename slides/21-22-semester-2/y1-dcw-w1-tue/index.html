@@ -362,6 +362,17 @@ template:tpl-slides-title
 .lc.lc-75[
 Don't forget they will each have an opening (e.g. `<p>`) and closing (e.g. `</p>`) tag surrounding an existing piece of text. Read this [html reference](https://doodybrains.github.io/hand-coding-round-robin/reference.html) for a quick recap].
 
+---
+class: bespoke-code-small
+### Nested Tags
+##### It is normal to nest tags within tags. For example to emphasise (`<em>`) a word within a paragraph (`<p>`).
+
+```html
+
+<p>If I had to guess, I'd <em>say 30 years</em> [..]</p>
+
+<p>This book is for <strong>designers</strong> who [..]</p>
+```
 
 ---
 template:tpl-slides-title
@@ -371,7 +382,32 @@ template:tpl-slides-title
 ##### Once you've made some changes in VS Code return to the browser and _refresh_.
 ]
 .rc.cover-left[![Browser Before](./img/vsc-browser-after.png)]  
+
 ---
+template:tpl-slides-title
+class: bespoke-code-small
+### Adding CSS rules (styles)
+
+##### We add visual styles to our HTML using CSS rules. 
+.lc.lc-75[
+##### These rules affect selected HTML tags and change specific properties, for example changing the `color` and `background-color` properties of all the `<em>` tags.  
+]
+
+---
+### A CSS Ruleset example
+
+.oc[
+![CSS Ruleset](./img/css-rule.png)
+]
+
+---
+
+### Adding your own rules
+Styles can be written in various places. For our purposes we'll be writing them in a `.css` file that lives next to our `index.html`.
+
+---
+
+
 template:tpl-slides-title
 class: title-colour
 ## &nbsp;
@@ -469,6 +505,12 @@ class: bespoke-code-small
 template:tpl-slides-title
 class: middle bespoke-code-small
 
+```html
+<p class="highlight">Mind you, this is by no [..]</p>
+```
+```html
+<a href="https://html.energy/">HTML Energy</a>
+```
 ```html
 <a href="https://html.energy/">HTML Energy</a>
 ```
