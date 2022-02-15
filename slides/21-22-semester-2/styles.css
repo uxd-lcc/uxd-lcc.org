@@ -74,7 +74,7 @@ p {
 .remark-slide-content h5 {
   margin: 1em 0 0;
   font-size: 37px;
-  line-height: 120%;
+  line-height: 125%;
   font-weight: 500;
 }
 
@@ -406,6 +406,19 @@ blockquote p {
   letter-spacing: -0.5px;
 }
 
+.bespoke-code-extra-small .remark-code {
+  font-size: 18px;
+}
+
+.bespoke-code-medium .remark-code {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+h3 .remark-inline-code {
+  font-size: 40px;
+}
+
 .middle h2:only-of-type,
 .middle h3:only-of-type,
 .middle h4:only-of-type,
@@ -413,8 +426,18 @@ blockquote p {
   margin: 0;
 } 
 
+.hljs-default .hljs-keyword, .hljs-default .hljs-attribute, .hljs-default .hljs-selector-tag, .hljs-default .hljs-meta-keyword, .hljs-default .hljs-doctag, .hljs-default .hljs-name {
+  font-weight: normal;
+}
 .hljs-tag {
   color: var(--clr-blue) !important;
+}
+
+.hljs-selector-tag {
+  color: #413f02 !important;
+}
+.hljs-attribute {
+  color: #ba4040 !important;
 }
 
 .hljs-default .hljs {
@@ -430,6 +453,15 @@ blockquote p {
 .remark-code-line-highlighted .hljs-string {
   background-color: rgba(0, 243, 255, 0.34);
   border-radius: 6px;
+}
+
+.highlight-line .remark-code-line-highlighted {
+  border: 1px solid red;
+}
+
+.highlight-line .remark-code-line-highlighted .hljs-attr,
+.highlight-line .remark-code-line-highlighted .hljs-string{
+  background-color: transparent;
 }
 
 h6 code, h6 .remark-code { 

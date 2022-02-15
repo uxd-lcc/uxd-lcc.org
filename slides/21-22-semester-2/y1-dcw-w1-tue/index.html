@@ -13,7 +13,7 @@
 
 
 class: title-colour
-# HTML _is_ the Web
+# Workshop: Introduction to HTML & CSS
 .br[.br-child[
 Tue 15th Feb 2022
 
@@ -25,7 +25,7 @@ name: tpl-slides-title
 layout:true
 
 .br[.br-child[
-HTML _is_ the Web
+Introduction to HTML
 ]]
 
 ---
@@ -45,7 +45,11 @@ HTML _is_ the Web
 ???
 Frequently we look at websites in all their complexity and forget that at the base they are simply documents of text.
 
-https://www.nigella.com/assets/uploads/recipes/public-thumbnail/rhubarbandcustardtrifle-5fc6382587567.jpg
+---
+
+.full-bleed[
+![Web Trifle](./img/trifle.png)
+]
 
 ---
 ### What is HTML?
@@ -61,7 +65,7 @@ class: middle center
 ---
 
 
-#### So what is [HyperText](/slides/21-22-semester-2/y1-dcw-w1-tue/#8)</u>?? →
+#### So what is [HyperText](/slides/21-22-semester-2/y1-dcw-w1-tue/#9)</u>?? →
 
 ---
 
@@ -113,6 +117,10 @@ Olia Lialina’s My Boyfriend Came Back from the War uses basic elements of HTML
 
 [Read more on Rhizome's Net Art Anthology](https://anthology.rhizome.org/my-boyfriend-came-back-from-the-war)
 ]
+???
+- Olia Lialina (unit sponsor)! made this piece in 1995. 
+- Coming from cinema she used simple HTML and imagery to relay an evocative narrative
+- It's a non-linear, intentionally fragmented story open to user navigation and reinterpretation
 
 ---
 class: middle, title-colour
@@ -220,20 +228,25 @@ class: middle bespoke-code-01
 ---
 template:tpl-slides-title
 class: middle bespoke-code-01
-##### `<article>`
-#####   `<h1>`Shaping Things (excerpt)`</h1>`
-##### By `<em>`Bruce Sterling`</em>`
-##### `<p>`...`</p>`
-##### `</article>`
+
+```html
+<article>
+  <h1>Shaping Things (excerpt)</h1>
+  By <em>Bruce Sterling</em>
+  <p>[..]</p>
+</article>
+```
 
 ---
 template:tpl-slides-title
 ### HTML Elements (or Tags)
 
 ##### An HTML <u>element</u> consists of a piece of <u>content</u></content> (in this case text) with an <u>opening</u> and <u>closing</u> tag.   
+<br>
 
-![The Anatomy of an HTML Element on MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png)
-
+.oc[
+![The Anatomy of an HTML Element](./img/tag-anatomy.png)
+]
 ---
 template:tpl-slides-title
 class: title-colour
@@ -285,9 +298,77 @@ template:tpl-slides-title
 
 ---
 template:tpl-slides-title
+
+.lc.lc-33[
+###### Here are a couple of examples of other tags to try.
+
+###### An `<em>` and `<strong>` tag are both used to indicate emphasis. 
+  
+###### You will most likely nest them inside `<p>` tags.
+]
+.rc.rc-66[
+![Browser 02](./img/shaping-things-code-03.png)
+]
+---
+template:tpl-slides-title
+
+.lc.lc-33[
+###### Here are a couple of examples of other tags to try.
+
+###### An `<em>` and `<strong>` tag are both used to indicate emphasis. 
+  
+###### You will most likely nest them inside `<p>` tags.
+]
+.rc.rc-66[
+![Browser 02](./img/shaping-things-code-04.png)
+]
+---
+template:tpl-slides-title
+
+.lc.lc-33[
+###### Here are a couple of examples of other tags to try.
+
+###### An `<em>` and `<strong>` tag are both used to indicate emphasis. 
+  
+###### You will most likely nest them inside `<p>` tags.
+]
+.rc.rc-66[
+![Browser 02](./img/shaping-things-code-05.png)
+]
+
+---
+template:tpl-slides-title
+
+.lc.lc-33[
+###### Here are a couple of examples of other tags to try.
+
+###### An `<em>` and `<strong>` tag are both used to indicate emphasis. 
+  
+###### You will most likely nest them inside `<p>` tags.
+]
+.rc.rc-66[
+![Browser 02](./img/shaping-things-browser-03.png)
+]
+
+---
+class: bespoke-code-small
+### Nested Tags
+##### It is normal to nest tags within tags. For example to emphasise a word within a paragraph you would need to nest an `<em>` inside a `<p>`.
+
+```html
+
+<p>If I had to guess, I'd <em>say 30 years</em> [..]</p>
+
+<p>This book is for <strong>designers</strong> who [..]</p>
+```
+
+---
+template:tpl-slides-title
 class: title-colour
 ## &nbsp;
 ## Your turn...
+<br>
+<a target="_blank" href="./basic-website.zip">Download basic website code</a> and unzip it somewhere.
 
 ---
 template:tpl-slides-title
@@ -355,24 +436,14 @@ template:tpl-slides-title
 
 ##### In VS Code add the following HTML elements. 
 - `<h1>` & `<h2>`
-- `<p>`
-- `<em>`
-- `<strong>`
+- `<p>` (around the paragraphs)
+- `<em>` (around at least 2 words) 
+- `<strong>` (around at least 2 words)
 
 .lc.lc-75[
-Don't forget they will each have an opening (e.g. `<p>`) and closing (e.g. `</p>`) tag surrounding an existing piece of text. Read this [html reference](https://doodybrains.github.io/hand-coding-round-robin/reference.html) for a quick recap].
-
----
-class: bespoke-code-small
-### Nested Tags
-##### It is normal to nest tags within tags. For example to emphasise (`<em>`) a word within a paragraph (`<p>`).
-
-```html
-
-<p>If I had to guess, I'd <em>say 30 years</em> [..]</p>
-
-<p>This book is for <strong>designers</strong> who [..]</p>
-```
+Don't forget they will each have an opening (e.g. `<p>`) and closing (e.g. `</p>`) tag surrounding an existing piece of text. <br><br>
+Read this [html reference](https://doodybrains.github.io/hand-coding-round-robin/reference.html) for a quick recap.
+]
 
 ---
 template:tpl-slides-title
@@ -384,6 +455,14 @@ template:tpl-slides-title
 .rc.cover-left[![Browser Before](./img/vsc-browser-after.png)]  
 
 ---
+### What is CSS?
+
+##### CSS stands for <u>C</u>ascading <u>S</u>tyle <u>S</u>heets
+
+##### You use it to control how an HTML page looks. We do this by defining presentational _rules_ that attach to specific HTML content.
+
+---
+
 template:tpl-slides-title
 class: bespoke-code-small
 ### Adding CSS rules (styles)
@@ -405,8 +484,100 @@ class: bespoke-code-small
 ### Adding your own rules
 Styles can be written in various places. For our purposes we'll be writing them in a `.css` file that lives next to our `index.html`.
 
+![](./img/vsc-openstylecss.png)
+
 ---
 
+### Adding your own rules
+Styles can be written in various places. For our purposes we'll be writing them in a `.css` file that lives next to our `index.html`.
+
+![](./img/vsc-highlightstylecss.png)
+
+---
+
+### Adding your own rules
+Styles can be written in various places. For our purposes we'll be writing them in a `.css` file that lives next to our `index.html`.
+
+![](./img/vsc-openedstylecss.png)
+
+---
+
+### Change `property` & `property-value`
+
+.oc[
+![CSS Ruleset](./img/css-rule.png)
+]
+
+
+---
+
+### Add your own ruleset
+
+
+![New CSS Ruleset](./img/vsc-newcssruleset.png)
+---
+
+### Add your own ruleset
+
+##### How do you know what values I can add to, for example, `font-weight` or `font-size`? 
+<br>
+![New CSS Ruleset](./img/css-rule-new.png)
+
+---
+
+### Start with these properties
+
+##### Each property on this [cheat sheet](https://gfte.notion.site/HTML-CSS-Cheatsheet-368d5f78741244088faf7d642364f1e9) has a link to the W3 Schools page that explains the property. 
+<br>
+
+
+---
+### Specifying Colour in CSS
+
+##### If the property value is a colour you can use:
+- ##### Hexidecimal values (e.g. `#ff00ff`)
+- ##### RGB values (e.g. `rgb(255, 0, 0)`)
+- ##### A descriptive colour word (e.g. `red`, `blue`, `coral`). 
+<br>
+The list of descriptive colour words are in the [cheat sheet](https://gfte.notion.site/HTML-CSS-Cheatsheet-368d5f78741244088faf7d642364f1e9)
+
+---
+
+### Bonus task
+
+- ##### Add a ruleset to change the `background-color` property of the whole page
+- ##### In that same ruleset add a property to change the `background-image` property to [a repeating pattern](https://looneypatterns.com/)
+- ##### Change the text and background colour to an [accessible colour contrast combination](http://clrs.cc/a11y/)
+
+---
+
+### Inspecting your HTML in the browser
+
+.lc.lc-75[
+##### 📽 [Recording](https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e6968ccc-a780-4a21-8480-acec00d92da5) and 📋 [slides](https://artslondon.sharepoint.com/:b:/t/LCC_IID/EfwlBKRnO5ZJkTLKOPXXMXMBE70P-o2tD_xLrvF4msDnmA?e=jz6gug) on how to use the browser's Developer Tools (as a designer). This allows you to see what your HTML is doing in the browser and modify the CSS rules live.  
+<br>
+Here are the URLs you'll need to follow along:
+https://petal-comet-hadrosaurus.glitch.me/
+]
+
+---
+### HTML & CSS Online Course
+
+##### For those who want to go faster or revise what we've covered in the lessons you can follow these courses.
+<br>
+**Foundations**
+
+[HTML and CSS - CSS Video Tutorial](https://www.linkedin.com/learning/css-essential-training-3/html-and-css)
+
+ **Intermediate**
+
+[CSS Layouts: From Float to Flexbox and Grid Online Class](https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/)
+
+ **Advanced**
+
+[CSS: Advanced Layouts with Grid Online Class](https://www.linkedin.com/learning/css-advanced-layouts-with-grid)
+
+---
 
 template:tpl-slides-title
 class: title-colour
@@ -415,10 +586,11 @@ class: title-colour
 
 ---
 template:tpl-slides-title
-### Elements with attributes
+### Adding elements with attributes
 
 .lc.lc-75[
 ##### HTML elements include attributes that look like the following:
+<br>
 ]
 
 ![](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png)
@@ -503,14 +675,23 @@ class: bespoke-code-small
 
 ---
 template:tpl-slides-title
-class: middle bespoke-code-small
+class: bespoke-code-small
+### Anchors and Images
+
+##### Both of these elements need an attribute to function correctly. 
 
 ```html
-<p class="highlight">Mind you, this is by no [..]</p>
+*<a href="https://html.energy/">HTML Energy</a>
 ```
 ```html
-<a href="https://html.energy/">HTML Energy</a>
+*<img src="https://uxd-lcc.org/html.jpg" />
 ```
+
+---
+class: bespoke-code-medium
+### Anchors (i.e. links)
+##### A link will surround a piece of text (or other elements including images) and connect your HTML page to another. 
+
 ```html
 <a href="https://html.energy/">HTML Energy</a>
 ```
@@ -518,9 +699,11 @@ class: middle bespoke-code-small
 ---
 
 template:tpl-slides-title
-### More about HTML Elements
+### Images
 .lc.lc-75[
 ##### So far we've used HTML elements that surround a piece of text with a closing and opening tag. 
+
+
 ]
 .rc.rc-25[
 <br>
@@ -528,11 +711,9 @@ template:tpl-slides-title
 `<p>`content`</p>`
 ]
 
-
-
 ---
 template:tpl-slides-title
-### More about HTML Elements
+### Images
 .lc.lc-75[
 ##### However when adding an image in HTML there is no text to surround. 
 
@@ -546,225 +727,193 @@ template:tpl-slides-title
 ]
 
 ---
-template:tpl-slides-title
-### More about HTML Elements
+class: bespoke-code-medium
 
-### 🏞 
+template:tpl-slides-title
+### Images
+
+##### And that URL needs to go inside the `src` attribute of the `<img>` tag.
 ```html
 <img src="https://uxd-lcc.org/html.jpg"/>
 ```
 
 
 ---
-template:tpl-slides-title
-#### What is the content of an image?
+class: bespoke-code-small
 
-`https://pbs.twimg.com/media/EvGaPHvWQAYnAVY?format=jpg&name=mediu`
+### Add an Anchor & Image
+
+##### Add an `<a>` tag around a word in one of your paragraphs. Find an appropriate URL/webpage to add to the `href` attribute.
+
+##### Find an image hosted online already (right-click, then Copy Image Link) and add the image link to the `src` attribute of the image tag 
 
 ---
+class: bespoke-code-small
+template:tpl-slides-title
 
-- Adding an image, a link and a css class
+### Adding a `class` attribute
 
+##### You can add a `class` attribute to any tag. In this example we're adding it to our `<p>`.
+
+```html
+<p>If I had to guess, I'd say 30 years [..]</p>
+
+*<p class="highlight">Mind you, this is by no [..]</p>
+
+<p>Nothing new there <a href="http://html.energy">fire</a>[..]</p>
+
+<p>This book is for designers who want to be[..]</p>
+
+<img src="https://uxd-lcc.org/html.jpg" />
+```
+
+---
+class: bespoke-code-small
+template:tpl-slides-title
+### Adding a `class` attribute
+
+##### Adding a `class` allows us to use a CSS selector to highlight that particular `<p>` element. 
+
+```html
+<p>If I had to guess, I'd say 30 years [..]</p>
+
+*<p class="highlight">Mind you, this is by no [..]</p>
+
+<p>Nothing new there fire is two million years old</p>
+
+<p>This book is for designers who want to be[..]</p>
+```
+
+---
+class: bespoke-code-small highlight-line
+template:tpl-slides-title
+### Styling a `class` attribute
+
+##### Adding a `class` allows us to use a CSS selector to highlight that particular `<p>` element. 
+
+```html
+<p>If I had to guess, I'd say 30 years [..]</p>
+
+<p class="highlight">Mind you, this is by no [..]</p>
+
+<p>Nothing new there fire is two million years old</p>
+
+<p>This book is for designers who want to be[..]</p>
+```
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### Styling a `class` attribute
+##### Let's try to surround the specific `<p>` tag with a red border
+  
+.lc[
+
+```html
+<p>If I had to guess, I'd s[..]</p>
+
+<p class="highlight">Mind [..]</p>
+
+<p>Nothing new there fire  [..]</p>
+
+<p>This book is for desig[..]</p>
+```
+]
+
+.rc[
+<br> 
+![](./img/css-rule-p.png)
+]
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### Styling a `class` attribute
+##### Let's try to surround the specific `<p>` tag with a red border
+.lc[
+```html
+*<p>If I had to guess, I'd s[..]</p>
+
+*<p class="highlight">Mind [..]</p>
+
+*<p>Nothing new there fire  [..]</p>
+
+*<p>This book is for desig[..]</p>
+```
+]
+
+.rc[
+<br>
+![](./img/css-rule-p.png)
+]
+.oc[
+## 👎
+]
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### Styling a `class` attribute
+##### Let's try to surround the specific `<p>` tag with a red border
+.lc[
+```html
+<p>If I had to guess, I'd s[..]</p>
+
+*<p class="highlight">Mind [..]</p>
+
+<p>Nothing new there fire  [..]</p>
+
+<p>This book is for desig[..]</p>
+```
+]
+
+.rc[
+<br>
+![](./img/css-rule-highlight.png)
+]
+.oc[
+## 👌
+]
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### Styling a `class` attribute
+
+<br>
+.oc[
+![](./img/css-rule-highlight-annotate.png)
+]
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### Styling a `class` attribute
+.lc[
+##### Let's try to surround the highlighted `<p>` with a red border
+
+```html
+<p>If I had to guess, I'd s[..]</p>
+
+<p class="highlight">Mind [..]</p>
+
+<p>Nothing new there fire  [..]</p>
+
+<p>This book is for desig[..]</p>
+```
+]
+
+.rc[
+###### &nbsp;
+###### &nbsp; 
+![](./img/css-rule-highlight.png)
+
+]
 ---
 template:tpl-slides-title
 ### Adding basic css
 
 
----
-template:tpl-slides-title
-### Changing the provided content for their own stories
-
-- Adding basic css
-
-
-
----
-
-
-
-## Historic precedents of Hypertext
-
-##### The idea behind hypertext was speculated on in literature, art and elsewhere  
-
-
----
-
-
-
-.full-bleed[
-![Borges' Garden of Forking Paths book cover](https://images-na.ssl-images-amazon.com/images/I/618ojPFxI0L.jpg)
-]
-
----
-
-.full-bleed[
-![Memex diagram intrepreted from article written by Vannevar Bush called "As We May Think"](https://miro.medium.com/max/548/0*0dy6qEZ379jd3c4K.jpg)
-]
-
-
-.caption.tr[
-“Consider a future device …  in which an individual stores all his books, records, and communications, and which is mechanized so that it may be consulted with exceeding speed and flexibility. It is an enlarged intimate supplement to his memory.” 
-Vannevar Bush - [As We May Think](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/) (1945)
-]
-
-???
-1945 article "As We May Think". 
-Hypothetical machine that could store content on microfilm using coded symbols that would index, search, and link content to create and follow associative trails. 
-
-
----
-https://www.thecasefarm.co.uk/wp-content/uploads/2019/07/aspen-movie-map.jpg
-
----
-
-## &nbsp;
-### Unit introduction is a little talk on this and that on this and that. 
-
----
-.lc-75[
-##### As we welcome more students and staff back on site with the start of the new academic year, it is important we are aware of and follow the latest COVID-19 health and safety measures.
-]
-
----
-## This title is a little longer, like 2x
-##### Unit introduction is a little talk on this and that. 
-
-##### Then we’ll do a thing and we come back together for a discussion.
-
----
-class: alt-colour
-
-## Today
-
-.lc-75[
-#### Unit introduction is a little talk on this and that. Then we’ll do a thing and we come back together for a discussion.
-]
-
----
-
-## Today!
-
-It is important we are aware of and follow the latest COVID-19 health and safety measures.
-.lc-75[
-* Welcome back 👋🏻 
-* What to expect in year 2? 
-* Back in the building
-* Unit & Project briefing
-* **Lunch 🌮 **
-]
-
----
-
-## Mozilla in the house
-
-.lc.lc-75[
-Guest speakers from Mozilla:
-- __Solana Larsen__: editor of the Internet Health Report
-- __Stefan Baack__: research and data analyst for the Insights Team
-]
-
-.rc.rc-25[
-![Right-aligned image](https://assets.mofoprod.net/network/images/mo-fo_logo-w.2e16d0ba.fill-890x890-c100.format-jpeg.jpg)
-]
-
----
-class: middle
-layout: false
-
-![KIS Hours](./img/KIS-Hours-Y1-Y2-annotated.png)
-
----
-class: middle
-layout: false
-
-.lc[
-![KIS Hours](./img/KIS-Hours-Y1-Y2-annotated.png)
-]  
-.rc[
-![KIS Hours](./img/KIS-Hours-Y1-Y2-annotated.png)
-]  
-
----
-class: middle
-layout: false
-
-.lc[
-### Laughs real hard at the hobbit
-]
-.rc-press.cover[![KIS Hours](./img/KIS-Hours-Y1-Y2-annotated.png)]  
-.caption.tr[
-  Mimi Onouha - [Library of Missing Datasets](https://mimionuoha.com/the-library-of-missing-datasets)
-]
----
-class: top
-layout: false
-
-.lc-75[
-#### What do we think we will find in here? Or what will we not find?
-]
-.rc-press.rc-25.cover[![Picture of Filing Cabinet](./img/mimi-portrait.jpeg)]
-
-.caption.tr[
-  Mimi Onouha - [Library of Missing Datasets](https://mimionuoha.com/the-library-of-missing-datasets)
-]
-
----
-class: middle, title-slide
-
-.full-bleed[
-![Picture of Filing Cabinet](./img/mimi-portrait.jpeg)
-]
-
-.caption[
-  Mimi Onouha - [Library of Missing Datasets](https://mimionuoha.com/the-library-of-missing-datasets)
-]
-
----
-class: middle, img-max-vh-full
-
-### Teaching hours vs. independent study hours
-
-```
-                      Taught                Independent
-
-YEAR 1                                        
-40 credit unit        120 hrs               280 hrs
-Entire year           324 hrs               876 hrs
-                      27%                   73%  
-
-YEAR 2        
-40 credit unit        100 hours             300 hours
-Entire year           300 hours             900 hours
-                      25%                   75%
-
-YEAR 3
-40 credit unit        77  hours             322
-Entire year           232 hours             967 hours
-                      19%                   81%
-```
----
-
-class: middle
-
-### Course Diagram
-![Course Diagram](./img/course-diagram.png)
-
-
----
-
-## Diplomas and Exchange
-
-##### → **Diploma for Professional Studies (DPS)**
-There will be a briefing on 30th Nov as part of your Professional Practices unit. (See [Y2 Announcements](https://discord.com/channels/765212601067241492/766677942427451392/886967819848253451) post for more)
-
-
-##### → **Diploma in Creative Computing (DPS)**
-The CCI diploma enhances your degree with the computational skills shaping the future of the digital creative industries. 
-
-##### → **Exchange**
-Exchange Programme in semester 2 with Augsburg University, Germany
-
----
 
 
     </textarea>
