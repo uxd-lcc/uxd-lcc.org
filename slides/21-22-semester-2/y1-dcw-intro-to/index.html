@@ -749,12 +749,12 @@ class: bespoke-code-small
 ##### Find an image hosted online already (right-click, then Copy Image Link) and add the image link to the `src` attribute of the image tag 
 
 ---
-class: bespoke-code-small highlight-attribute
+class: bespoke-code-extra-small highlight-line
 template:tpl-slides-title
 
 ### Adding a `class` attribute
 
-##### You can add a `class` attribute to any tag. In this example we're adding it to our `<p>`.
+##### You can add a `class` attribute to any tag. <br>In this example we're adding it to a `<p>` to select and style that particular element.
 
 ```html
 <p>If I had to guess, I'd say 30 years [..]</p>
@@ -767,30 +767,90 @@ template:tpl-slides-title
 
 <img src="https://uxd-lcc.org/html.jpg" />
 ```
-
 ---
-class: bespoke-code-small highlight-attribute
+class: bespoke-code-extra-small highlight-line
 template:tpl-slides-title
+
 ### Adding a `class` attribute
 
-##### Adding a `class` allows us to use a CSS selector to highlight that particular `<p>` element. 
+##### You can add a `class` attribute to any tag. <br>But we can add a `class` to any element so that we can specifically add style rules to it.
 
 ```html
 <p>If I had to guess, I'd say 30 years [..]</p>
 
-*<p class="highlight">Mind you, this is by no [..]</p>
+<p class="highlight">Mind you, this is by no [..]</p>
 
-<p>Nothing new there fire is two million years old</p>
+<p>Nothing new there <a href="http://html.energy">fire</a>[..]</p>
 
 <p>This book is for designers who want to be[..]</p>
+
+*<img class="thumbnail" src="https://uxd-lcc.org/html.jpg" />
+```
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+
+### Adding a `class` attribute
+
+##### You can add a `class` attribute to any tag. <br>But we can add a `class` to any element so that we can specifically add style rules to it.
+
+```html
+<p>If I had to guess, I'd say 30 years [..]</p>
+
+<p class="highlight">Mind you, this is by no [..]</p>
+
+*<p>Nothing new there <a class="button" href="http://html.energy">fire</a>[..]</p>
+
+<p>This book is for designers who want to be[..]</p>
+
+<img class="thumbnail" src="https://uxd-lcc.org/html.jpg" />
+```
+
+---
+class: highlight-line
+template:tpl-slides-title
+
+### Adding a `class` attribute
+
+##### 🚨 Important! The `class` name can be anything you want. 
+
+```html
+<p class="call-me-what-you-want">[..]</p>
+<p class="but-make-it-sensible">[..]</p>
+<p class="with-no-spaces">[..]</p>
+```
+If you add a space that implies multiple classes:
+```html
+<p class="quote highlight">[..]</p>
 ```
 
 ---
 class: bespoke-code-small
 template:tpl-slides-title
+
+### Adding a `class` attribute
+
+##### You should, however, choose something that relates to the purpose of the CSS rule you are applying.
+
+
+```html
+<div class="left-column">[..]</div>
+
+<p class="highlight">Mind you, this is by no [..]</p>
+
+<a class="button" href="http://html.energy">fire</a>[..]
+
+<img class="thumbnail" src="https://uxd-lcc.org/html.jpg" />
+
+<img class="hero-image" src="https://uxd-lcc.org/html.jpg" />
+```
+---
+class: bespoke-code-small
+template:tpl-slides-title
 ### Styling a `class` attribute
 
-##### Adding a `class` allows us to use a CSS selector to highlight that particular `<p>` element. 
+##### Returning to the `<p>` element. Adding the `class` allows us to use a CSS selector to visually highlight it. 
 
 ```html
 <p>If I had to guess, I'd say 30 years [..]</p>
@@ -893,6 +953,7 @@ template:tpl-slides-title
 
 ##### Use cases for HTML elements `<div>` & `<span>`.
 ---
+exclude: true
 class: todo bespoke-code-extra-small highlight-line
 template:tpl-slides-title
 ### `block` vs `inline` elements
@@ -1182,10 +1243,15 @@ MDN has an [excellent demonstration](https://developer.mozilla.org/en-US/docs/We
 
 ---
 
-## Example for `float`
+### An incorrect use of `float`
 
-Maybe another example with just text
-https://glitch.com/edit/#!/html-css-float
+.lc.rc-25[
+###### [Edit this code on Glitch.com](https://glitch.com/edit/#!/html-css-float)
+]
+.rc.rc-75[
+![](./img/browser-float-example.png)
+]
+
 
 ---
 class: bespoke-code-extra-small 
@@ -1243,16 +1309,64 @@ MDN has an [excellent demonstration](https://developer.mozilla.org/en-US/docs/We
 ![](./img/mdn-absolute.png) 
 
 ---
+class: bespoke-code-extra-small
 
-## Example for `position`
+### Example for `position: relative`
 
-https://glitch.com/edit/#!/html-css-position
+```html
+<p>
+  Mind you, this is by no means an entirely 
+  happy prospect. It's important to acknowledge
+  the <span class="down">down</span>sides of any technological
+  transformation - to "think of the <span class="down">under</span>side
+</p>
+```
 
-https://glitch.com/edit/#!/html-css-animate-position-relative
+---
+class: bespoke-code-extra-small
+
+### Example for `position: relative`
+
+```html
+<p>
+  Mind you, this is by no means an entirely 
+  happy prospect. It's important to acknowledge
+  the <span class="down">down</span>sides of any technological
+  transformation - to "think of the <span class="down">under</span>side
+</p>
+```
+
+
+
+```css
+.down {
+  position: relative;
+  top: 10px;
+}
+```
+
+
+<small>[View/Edit code](https://glitch.com/edit/#!/html-css-position-relative) ([Bonus example with animation](https://glitch.com/edit/#!/html-css-animate-position-relative))</small>
+
+???
 https://glitch.com/edit/#!/html-css-position-relative
+
+
+---
+class: bespoke-code-extra-small
+
+### Example for `position: absolute`
+
+https://glitch.com/edit/#!/html-css-position  
+
+---
+class: bespoke-code-extra-small
+
+### Exercise for `position: absolute`
+
 https://glitch.com/edit/#!/html-css-position-exercise
 
-
+---
 
 
     </textarea>
