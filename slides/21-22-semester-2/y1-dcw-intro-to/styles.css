@@ -33,57 +33,24 @@ ul {
   padding-left: 28px 
 }
 
-blockquote {
-  border-left: 10px rgba(0,0,0, 0.75) solid;
-  margin-left: 0px;
-  padding-left: 20px;
-  position: relative;
-}
-
-blockquote::before {
-  content: "\“";
-  opacity: 0.75;
-  position: absolute;
-  font-size: 80px;
-  left: 6px;
-  top: -50px;
-  /* transform: rotate(5deg); */
-  font-family: Georgia, 'Times New Roman', Times, serif;
-} 
-
-cite {
-  font-size: 24px;
-}
-
-cite,
-blockquote p {
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  line-height: 130%;
-}
-
+li,
 p {
-  margin: 0 0 1em 0;
-  font-size: 37px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
   line-height: 130%;
-  font-weight: 500;
 }
-
-li {
-  margin: 0 0 0.25em 0;
-  font-size: 30px;
-  line-height: 130%;
-  font-weight: 500;
+p {
+  margin: 0 0 0.5em;
 }
 
 .remark-slide-content h1 {
-  margin: 0 0 0.3em;
+  margin: 0 0 28px;
   font-size: 92px;
   line-height: 1;
   letter-spacing: -0.1px;
   text-transform: uppercase;
-  margin-top: 0.6em;
+  margin-top: 60px;
 }
 
 .remark-slide-content h2 {
@@ -138,6 +105,11 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
+}
+
+p {
+  font-size: 28px;
+  line-height: 130%;
 }
 
 .unbold h2,
@@ -331,9 +303,10 @@ code, .remark-code,
 }
 
 .caption p {
+  /* text-transform: uppercase; */
   color: black;
   font-size: 14px;
-  margin: 0;
+  /* line-height: 1.5; */
 }
 
 
@@ -397,6 +370,16 @@ a:active {
   background-color: #fdc086;
 }
 
+blockquote {
+  border-left: 10px black solid;
+  margin-left: 0px;
+  padding-left: 20px;
+}
+blockquote p {
+  font-size: 26px;
+  line-height: 160%;
+}
+
 .remark-notes-preview p,
 .remark-notes-preview li,
 .remark-notes p,
@@ -424,7 +407,7 @@ a:active {
 }
 
 .bespoke-code-extra-small .remark-code {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .bespoke-code-medium .remark-code {
@@ -443,30 +426,6 @@ h3 .remark-inline-code {
   margin: 0;
 } 
 
-.hljs-default .hljs.html .hljs-comment {
-  color: #289728
-}
-
-.hljs-default .hljs.css {
-  background: #1e1e1e;
-  border-radius: 15px;
-  padding: 30px;
-}
-
-.hljs-default .hljs.css .hljs-selector-class,
-.hljs-default .hljs.css .hljs-selector-tag {
-  color: #d7ba7d;
-}
-
-.hljs-default .hljs.css .hljs-attribute {
-  color: #9cdcfe;
-}
-
-.hljs-default .hljs.css {
-  color: #d4d4d4;
-}
-
-
 .hljs-default .hljs-keyword, .hljs-default .hljs-attribute, .hljs-default .hljs-selector-tag, .hljs-default .hljs-meta-keyword, .hljs-default .hljs-doctag, .hljs-default .hljs-name {
   font-weight: normal;
 }
@@ -474,7 +433,10 @@ h3 .remark-inline-code {
   color: var(--clr-blue) !important;
 }
 
-.hljs-default .hljs.html .hljs-attribute {
+.hljs-selector-tag {
+  color: #413f02 !important;
+}
+.hljs-attribute {
   color: #ba4040 !important;
 }
 
@@ -483,11 +445,12 @@ h3 .remark-inline-code {
 }
 
 .remark-code-line-highlighted {
+  /* background-color: rgba(0, 243, 255, 0.34); */
   background-color: transparent;
 }
 
-.highlight-attribute .remark-code-line-highlighted .hljs-attr,
-.highlight-attribute .remark-code-line-highlighted .hljs-string {
+.remark-code-line-highlighted .hljs-attr,
+.remark-code-line-highlighted .hljs-string {
   background-color: rgba(0, 243, 255, 0.34);
   border-radius: 6px;
 }

@@ -6,8 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./styles.css" />
-    <meta http-equiv="Refresh" content="0; url='/slides/21-22-semester-2/y1-dcw-intro-to/'" />
+    <link rel="stylesheet" href="./../styles.css" />
   </head>
   <body>
     <textarea id="source">
@@ -539,6 +538,7 @@ Styles can be written in various places. For our purposes we'll be writing them 
 - ##### Hexidecimal values (e.g. `#ff00ff`)
 - ##### RGB values (e.g. `rgb(255, 0, 0)`)
 - ##### A descriptive colour word (e.g. `red`, `blue`, `coral`). 
+
 <br>
 The list of descriptive colour words are in the [cheat sheet](https://gfte.notion.site/HTML-CSS-Cheatsheet-368d5f78741244088faf7d642364f1e9)
 
@@ -554,28 +554,28 @@ The list of descriptive colour words are in the [cheat sheet](https://gfte.notio
 
 ### Inspecting your HTML in the browser
 
-.lc.lc-75[
-##### 📽 [Recording](https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e6968ccc-a780-4a21-8480-acec00d92da5) and 📋 [slides](https://artslondon.sharepoint.com/:b:/t/LCC_IID/EfwlBKRnO5ZJkTLKOPXXMXMBE70P-o2tD_xLrvF4msDnmA?e=jz6gug) on how to use the browser's Developer Tools (as a designer). This allows you to see what your HTML is doing in the browser and modify the CSS rules live.  
+📽 [Recording](https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e6968ccc-a780-4a21-8480-acec00d92da5) and 📋 [slides](https://artslondon.sharepoint.com/:b:/t/LCC_IID/EfwlBKRnO5ZJkTLKOPXXMXMBE70P-o2tD_xLrvF4msDnmA?e=jz6gug) on how to use the browser's Developer Tools (as a designer). This allows you to see what your HTML is doing in the browser and modify the CSS rules live.  
 <br>
 Here are the URLs you'll need to follow along:
 https://petal-comet-hadrosaurus.glitch.me/
-]
+
 
 ---
 ### HTML & CSS Online Course
 
 ##### For those who want to go faster or revise what we've covered in the lessons you can follow these courses.
 <br>
-**Foundations**
-
+**Foundations**<br>
 [HTML and CSS - CSS Video Tutorial](https://www.linkedin.com/learning/css-essential-training-3/html-and-css)
 
- **Intermediate**
-
+**Intermediate**<br>
 [CSS Layouts: From Float to Flexbox and Grid Online Class](https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/)
+---
+### HTML & CSS Online Course
 
- **Advanced**
-
+##### For those who want to go faster or revise what we've covered in the lessons you can follow these courses.
+<br>
+**Advanced**<br>
 [CSS: Advanced Layouts with Grid Online Class](https://www.linkedin.com/learning/css-advanced-layouts-with-grid)
 
 ---
@@ -617,7 +617,7 @@ class: bespoke-code-small
 
 ---
 template:tpl-slides-title
-class: bespoke-code-small
+class: bespoke-code-small highlight-attribute
 ### Elements with attributes
 
 ```html
@@ -636,7 +636,7 @@ class: bespoke-code-small
 
 ---
 template:tpl-slides-title
-class: bespoke-code-small
+class: bespoke-code-small highlight-attribute
 ### Elements with attributes
 
 ```html
@@ -655,7 +655,7 @@ class: bespoke-code-small
 
 ---
 template:tpl-slides-title
-class: bespoke-code-small
+class: bespoke-code-small highlight-attribute
 ### Elements with attributes
 
 ```html
@@ -676,7 +676,7 @@ class: bespoke-code-small
 
 ---
 template:tpl-slides-title
-class: bespoke-code-small
+class: bespoke-code-small highlight-attribute
 ### Anchors and Images
 
 ##### Both of these elements need an attribute to function correctly. 
@@ -749,7 +749,7 @@ class: bespoke-code-small
 ##### Find an image hosted online already (right-click, then Copy Image Link) and add the image link to the `src` attribute of the image tag 
 
 ---
-class: bespoke-code-small
+class: bespoke-code-small highlight-attribute
 template:tpl-slides-title
 
 ### Adding a `class` attribute
@@ -769,7 +769,7 @@ template:tpl-slides-title
 ```
 
 ---
-class: bespoke-code-small
+class: bespoke-code-small highlight-attribute
 template:tpl-slides-title
 ### Adding a `class` attribute
 
@@ -786,7 +786,7 @@ template:tpl-slides-title
 ```
 
 ---
-class: bespoke-code-small highlight-line
+class: bespoke-code-small
 template:tpl-slides-title
 ### Styling a `class` attribute
 
@@ -803,7 +803,7 @@ template:tpl-slides-title
 ```
 
 ---
-class: bespoke-code-extra-small highlight-line
+class: bespoke-code-extra-small
 template:tpl-slides-title
 ### Styling a `class` attribute
 ##### Let's try to surround the specific `<p>` tag with a red border
@@ -887,32 +887,370 @@ template:tpl-slides-title
 ]
 
 ---
-class: bespoke-code-extra-small highlight-line
+class: title-colour
 template:tpl-slides-title
-### Styling a `class` attribute
-.lc[
-##### Let's try to surround the highlighted `<p>` with a red border
+## Containing and styling specific elements
+
+##### Use cases for HTML elements `<div>` & `<span>`.
+---
+class: todo bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### `block` vs `inline` elements
+
+change a em to a p or a span to a div
+https://www.w3schools.com/html/html_blocks.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+
+---
+class: bespoke-code-extra-small highlight-attribute
+template:tpl-slides-title
+### A common use for `span`
+
+##### A `span` element is often used to target specific words or groups of words to add style rules.
 
 ```html
-<p>If I had to guess, I'd s[..]</p>
+<p>
+  Mind you, this is by no means an entirely 
+  happy prospect. It's important to acknowledge
+  the downsides of any technological
+  transformation - to "think of the underside 
+  first", to think in a precautionary way.
+</p>
+```
 
-<p class="highlight">Mind [..]</p>
+---
 
-<p>Nothing new there fire  [..]</p>
+class: bespoke-code-extra-small highlight-attribute
+template:tpl-slides-title
+### A common use for `span`
 
-<p>This book is for desig[..]</p>
+##### A `span` element is often used to target specific words or groups of words to add style rules.
+
+```html
+<p>
+  Mind you, this is by no means an entirely 
+  happy prospect. It's important to acknowledge
+  the <span class="highlight">downsides</span> of any technological
+  transformation - to "think of the underside 
+  first", to think in a precautionary way.
+</p>
+```
+
+---
+
+class: bespoke-code-extra-small highlight-attribute
+template:tpl-slides-title
+### A common use for `span`
+
+##### A `span` element is often used to target specific words or groups of words to add style rules.
+
+```html
+<p>
+  Mind you, this is by no means an entirely 
+  happy prospect. It's important to acknowledge
+  the <span class="highlight">downsides</span> of any technological
+  transformation - to "think of the underside 
+  first", to <span class="highlight">think in a precautionary</span> way.
+</p>
+```
+
+???
+```html
+<div class="question">
+  <p>How does one get <span class="highlight">ambushed</span> by a [..]</p>
+</div>
+
+<div class="answer">
+  <p>That's an <span class="highlight">interesting question</span> [..]</p>
+</div>
+```
+
+???
+It's an inline element so it won't ruin the flow of text, like a block element would.
+
+---
+
+class: bespoke-code-extra-small highlight-attribute
+template:tpl-slides-title
+### A common use for `span`
+
+.lc.rc-25[
+###### [Edit this code on Glitch.com](https://glitch.com/edit/#!/html-basic-span)
+
+]
+.rc.rc-75[
+![](./img/browser-span-example.png)
+]
+
+
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### A common use for `div`
+
+##### A `div` element is often used as a container for other elements. 
+
+.fc[
+```html
+*<div class="question">
+  <p>How does one get ambushed by a birthday cake?</p>
+  <img src="https://img-example.com/colin.jpg" />
+*</div>
+
+<div class="answer">
+  <p>That's an interesting question, which I'll answer in many parts</p>
+  <p>Firstly, [...]</p>
+  <p>Secondly, [...]</p>
+</div>
+```
+]
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### A common use for `div`
+
+##### A `div` element is often used as a container for other elements. 
+
+.fc[
+```html
+<div class="question">
+  <p>How does one get ambushed by a birthday cake?</p>
+  <img src="https://img-example.com/colin.jpg" />
+</div>
+
+*<div class="answer">
+  <p>That's an interesting question, which I'll answer in many parts</p>
+  <p>Firstly, [...]</p>
+  <p>Secondly, [...]</p>
+*</div>
+```
+]
+
+
+---
+class: bespoke-code-extra-small highlight-line
+template:tpl-slides-title
+### A common use for `div`
+.fc[
+]
+.lc[
+```html
+<div class="question">
+  <p>How does one get ambushed by a birthday cake?</p>
+  <img src="https://img-example.com/colin.jpg" />
+</div>
+
+<div class="answer">
+  <p>That's an interesting question, which I'll answer in many parts</p>
+  <p>Firstly, [...]</p>
+  <p>Secondly, [...]</p>
+</div>
 ```
 ]
 
 .rc[
-###### &nbsp;
-###### &nbsp; 
-![](./img/css-rule-highlight.png)
+```css
+.question {
+  border: 1px solid linen;
+  background-color: maroon;
+  color: blanchedalmond;
+}
 
+.answer {
+  border: 1px solid chartreuse;
+  background-color: floralwhite;
+  color: goldenrod;
+}
+```
 ]
+
 ---
+<!-- template:tpl-slides-title -->
+### A common use for `div`
+
+.lc.rc-25[
+###### [Edit this code on Glitch.com](https://glitch.com/edit/#!/html-basic-divs)
+]
+.rc.rc-75[
+![](./img/browser-div-example.png)
+]
+
+---
+class: title-colour
 template:tpl-slides-title
-### Adding basic css
+## CSS & HTML comments
+
+.lc.lc-75[
+##### Comments are used in code to add notes to yourself or others, or to tell the browser to temporarily ignore a piece of code. Really useful for debugging.
+]
+
+---
+class: bespoke-code-extra-small 
+template:tpl-slides-title
+### CSS comments
+
+Anything in between `/*` and `*/` is ignored.
+
+```css
+.question {
+  border: 1px solid linen;
+  background-color: maroon;
+  color: blanchedalmond;
+  width: 50%;
+  /*
+  To use `position: absolute` on a child element, 
+  the parent needs  to be position: relative;
+  */
+  position: relative;
+}
+```
+
+---
+class: bespoke-code-extra-small 
+template:tpl-slides-title
+### HTML comments
+
+Anything in between `<!--` and `-->` is ignored.
+
+```html
+<p>
+  <!-- Using spans here because I've already used an em  -->
+  Mind you, this is by no means an entirely 
+  happy prospect. It's important to acknowledge
+  the <span class="highlight">downsides</span> of any technological
+  transformation - to "think of the underside 
+  first", to <span class="highlight">think in a precautionary</span> way.
+</p>
+```
+
+
+---
+class: title-colour
+template:tpl-slides-title
+## Positioning elements using CSS
+
+##### Use cases for CSS properties `float` and `position`.
+
+---
+class: bespoke-code-extra-small 
+template:tpl-slides-title
+### Using CSS `float`
+
+The `float` CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
+
+.lc[
+```css
+.left-image {
+  float: left
+}
+```
+]
+.rc[
+```css
+.right-icon {
+  float: right;
+}
+```
+]
+
+---
+
+template:tpl-slides-title
+### Using CSS `float`
+
+MDN has an [excellent demonstration](https://developer.mozilla.org/en-US/docs/Web/CSS/float) of how the CSS `float` property works.
+
+![](./img/mdn-floatnone.png)
+---
+
+template:tpl-slides-title
+### Using CSS `float`
+
+MDN has an [excellent demonstration](https://developer.mozilla.org/en-US/docs/Web/CSS/float) of how the CSS `float` property works.
+
+![](./img/mdn-floatleft.png)
+---
+
+template:tpl-slides-title
+### Using CSS `float`
+
+MDN has an [excellent demonstration](https://developer.mozilla.org/en-US/docs/Web/CSS/float) of how the CSS `float` property works.
+
+![](./img/mdn-floatright.png)
+
+---
+
+## Example for `float`
+
+Maybe another example with just text
+https://glitch.com/edit/#!/html-css-float
+
+---
+class: bespoke-code-extra-small 
+template:tpl-slides-title
+### Using CSS `position`
+
+The `position` CSS property sets how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` properties are used alongside it.
+
+.lc[
+```css
+.offset {
+  position: relative;
+  top: 40px; 
+  left: 40px;
+}
+```
+]
+.rc[
+```css
+.offset {
+  position: absolute;
+  bottom: 10px; 
+  right: -20px;
+}
+```
+]
+
+---
+
+template:tpl-slides-title
+### Using CSS `position`
+
+MDN has an [excellent demonstration](https://developer.mozilla.org/en-US/docs/Web/CSS/position) of how the CSS `position` property works.
+
+![](./img/mdn-static.png)
+
+
+---
+
+template:tpl-slides-title
+### Using CSS `position`
+
+MDN has an [excellent demonstration](https://developer.mozilla.org/en-US/docs/Web/CSS/position) of how the CSS `position` property works.
+
+![](./img/mdn-relative.png)
+
+
+---
+
+template:tpl-slides-title
+### Using CSS `position`
+
+MDN has an [excellent demonstration](https://developer.mozilla.org/en-US/docs/Web/CSS/position) of how the CSS `position` property works.
+
+![](./img/mdn-absolute.png) 
+
+---
+
+## Example for `position`
+
+https://glitch.com/edit/#!/html-css-position
+
+https://glitch.com/edit/#!/html-css-animate-position-relative
+https://glitch.com/edit/#!/html-css-position-relative
+https://glitch.com/edit/#!/html-css-position-exercise
 
 
 
