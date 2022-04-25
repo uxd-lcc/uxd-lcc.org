@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;700&display=swap");
+
+:root {
+  --clr-green-luminous: #2bff91;
+  --clr-grey-light: #e2e2e2;
+  --clr-yellow: #fbf45d;
+  --clr-blue: #0074d9;
+  --clr-black: #03030c;
+  --clr-text: var(--clr-green-luminous);
+  --clr-background: var(--clr-grey-light);
+}
+
+.remark-slide-content {
+  background-color: var(--clr-yellow);
+  color: var(--clr-black);
+  padding: 50px;
+}
+
+.title-colour.remark-slide-content {
+  background-color: var(--clr-black);
+  color: var(--clr-yellow);
+}
+
+body {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+ol,
+ul {
+  margin: 28px 0 28px;
+  padding-left: 28px;
+}
+
+li,
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 130%;
+}
+p {
+  margin: 0 0 0.5em;
+}
+
+.remark-slide-content h1 {
+  margin: 0 0 28px;
+  font-size: 92px;
+  line-height: 1;
+  letter-spacing: -0.1px;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+.remark-slide-content h2 {
+  margin: 0 0 28px;
+  font-size: 92px;
+  line-height: 100%;
+}
+
+.remark-slide-content h3 {
+  margin: 0 0 28px;
+  font-size: 67px;
+  line-height: 110%;
+}
+
+.remark-slide-content h4 {
+  margin: 1em 0 28px;
+  font-size: 50px;
+  line-height: 120%;
+}
+
+.remark-slide-content h5 {
+  margin: 1em 0 0;
+  font-size: 37px;
+  line-height: 125%;
+  font-weight: 500;
+}
+
+/* 
+  Anything following a h6 makes h6 into an eyebrow
+*/
+.remark-slide-content h6 + h4,
+.remark-slide-content h6 + h5 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* 
+  When these are first they are not 
+  title so give them title space  
+*/
+/* .remark-slide-content p:first-of-type, 
+.remark-slide-content h4:first-of-type, 
+.remark-slide-content h5:first-of-type {
+  margin-top: 1.5em;
+} */
+
+.remark-slide-content h6 {
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 28px;
+  line-height: 130%;
+}
+
+.unbold h2,
+.unbold h3,
+.unbold h4 {
+  font-weight: normal;
+}
+
+code,
+.remark-code,
+.remark-inline-code {
+  color: var(--clr-blue);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: normal;
+  text-transform: none !important;
+  font-size: 30px;
+}
+
+/* top & bottom row */
+/* .tr {
+} */
+
+.br {
+  position: absolute;
+  height: calc(50%);
+  top: 50%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.br .br-child {
+  position: relative;
+  transform: translateY(-100%);
+  bottom: calc(-100% + 40px);
+}
+
+.br-child > p {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Two-column layouts */
+.oc {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.lc {
+  float: left;
+  width: 49%;
+  padding-right: 0.5em;
+  box-sizing: border-box;
+}
+
+.rc {
+  width: 49%;
+  float: right;
+  padding-left: 0.5em;
+  box-sizing: border-box;
+}
+
+.lc-50,
+.rc-50 {
+  width: 49%;
+}
+
+.lc-33 {
+  width: 33%;
+}
+
+.lc-25 {
+  width: 25%;
+}
+
+.lc-66 {
+  width: 66%;
+}
+
+.lc-75 {
+  width: 75%;
+}
+
+.rc-25 {
+  width: 25%;
+}
+
+.rc-33 {
+  width: 33%;
+}
+
+.rc-66 {
+  width: 66%;
+}
+
+.rc-75 {
+  width: 75%;
+}
+
+.rc ~ p {
+  clear: both;
+}
+.rc ~ ul,
+.rc ~ ol {
+  clear: both;
+}
+
+/* Column pressed to right */
+.rc-press {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rc-press.rc-25 {
+  width: 25%;
+}
+
+.rc-press p {
+  height: 100%;
+}
+
+.rc-press img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.rc-press.cover img {
+  object-fit: cover;
+  margin-top: 0;
+}
+.rc-press.cover-left img {
+  object-fit: cover;
+  object-position: left center;
+}
+
+.rc.no-top-border > *:first-child {
+  margin-top: 0;
+}
+
+.full-bleed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.full-bleed > p {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.full-bleed img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.full-bleed.cover img {
+  object-fit: cover;
+}
+
+.caption {
+  background: white;
+  border: 1px grey solid;
+  bottom: 20px;
+  box-shadow: 5px 5px;
+  left: 50%;
+  max-width: 50%;
+  padding: 10px;
+  position: absolute;
+  text-align: left;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+.caption.tr {
+  left: initial;
+  right: 20px;
+  transform: none;
+  bottom: auto;
+  top: 20px;
+}
+
+.caption.br {
+  left: auto;
+  right: 20px;
+  transform: none;
+  top: auto;
+  bottom: 50px;
+  height: auto;
+}
+
+
+.caption p {
+  /* text-transform: uppercase; */
+  color: black;
+  font-size: 14px;
+  /* line-height: 1.5; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-max-vh-30 img {
+  max-height: 30vh;
+  width: auto;
+}
+
+.img-max-vh-40 img {
+  max-height: 30vh;
+  width: auto;
+}
+
+.img-max-vh-50 img {
+  max-height: 50vh;
+  width: auto;
+}
+
+.img-max-vh-full img {
+  max-height: 500px;
+  width: auto;
+}
+.img-max-vh-full-w-title img {
+  max-height: 470px;
+  width: auto;
+}
+.img-max-vh-full-w-title-line img {
+  max-height: 418px;
+  width: auto;
+}
+
+.img-max-vw-40 img {
+  max-width: 40vw;
+  height: auto;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: var(--clr-blue);
+}
+
+.title-break.remark-slide-content h1:nth-of-type(1),
+.title-break.remark-slide-content h2:nth-of-type(1),
+.title-break.remark-slide-content h3:nth-of-type(1),
+.title-break.remark-slide-content h4:nth-of-type(1) {
+  margin-bottom: 0px;
+}
+
+.title-break.remark-slide-content hr:nth-of-type(1) {
+  margin-bottom: 28px;
+}
+
+.todo.remark-slide-content {
+  background-color: #fdc086;
+}
+
+blockquote {
+  border-left: 10px black solid;
+  margin-left: 0px;
+  padding-left: 20px;
+}
+blockquote p {
+  font-size: 26px;
+  line-height: 160%;
+}
+
+.remark-notes-preview p,
+.remark-notes-preview li,
+.remark-notes p,
+.remark-notes li {
+  font-size: 18px;
+}
+
+.remark-slide-content {
+  background-size: contain;
+}
+
+.weird {
+  text-decoration-line: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bespoke-code-01 #-h1-shaping-things-excerpt-h1-,
+.bespoke-code-01 #by-em-bruce-sterling-em-,
+.bespoke-code-01 #-p-p- {
+  padding-left: 40px;
+}
+
+.bespoke-code-small .remark-code {
+  font-size: 21px;
+  letter-spacing: -0.5px;
+}
+
+.bespoke-code-extra-small .remark-code {
+  font-size: 18px;
+}
+
+.bespoke-code-medium .remark-code {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+h3 .remark-inline-code {
+  font-size: 40px;
+}
+
+.middle h2:only-of-type,
+.middle h3:only-of-type,
+.middle h4:only-of-type,
+.middle h5:only-of-type {
+  margin: 0;
+}
+
+.hljs-default .hljs-keyword,
+.hljs-default .hljs-attribute,
+.hljs-default .hljs-selector-tag,
+.hljs-default .hljs-meta-keyword,
+.hljs-default .hljs-doctag,
+.hljs-default .hljs-name {
+  font-weight: normal;
+}
+.hljs-tag {
+  color: var(--clr-blue) !important;
+}
+
+.hljs-selector-tag {
+  color: #413f02 !important;
+}
+.hljs-attribute {
+  color: #ba4040 !important;
+}
+
+.hljs-default .hljs {
+  background: none;
+}
+
+.remark-code-line-highlighted {
+  /* background-color: rgba(0, 243, 255, 0.34); */
+  background-color: transparent;
+}
+
+.remark-code-line-highlighted .hljs-attr,
+.remark-code-line-highlighted .hljs-string {
+  background-color: rgba(0, 243, 255, 0.34);
+  border-radius: 6px;
+}
+
+.highlight-line .remark-code-line-highlighted {
+  border: 1px solid red;
+}
+
+.highlight-line .remark-code-line-highlighted .hljs-attr,
+.highlight-line .remark-code-line-highlighted .hljs-string {
+  background-color: transparent;
+}
+
+h6 code,
+h6 .remark-code {
+  font-size: 24px !important;
+}
+
+p code,
+p .remark-code {
+  font-size: 28px !important;
+}
+
+.remark-slide-content li {
+  margin: 0 0 10px;
+}
+
+/* Remove any top margin on headers inside lists */
+.remark-slide-content li > * {
+  margin-top: 0;
+}
+
+.grid {
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  height: 100%;
+}
+
+.grid-container p {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  width: 93%;
+}
+
+.grid-container img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
